@@ -1,0 +1,15 @@
+CREATE TABLE teclados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    descricao TEXT,
+    preco DECIMAL(10, 2),
+    estoque INT,
+    data_adicao DATE DEFAULT CURRENT_DATE
+);
+
+INSERT INTO teclados (nome, descricao, preco, estoque) VALUES
+('Logitech G915 TKL', 'Teclado mecânico sem fio com switches GL Tactile.', 999.90, 10),
+('Redragon Kumara K552', 'Teclado mecânico compacto com switches Outemu Red.', 249.90, 20),
+('Corsair K70 RGB MK.2', 'Teclado mecânico gamer com switches Cherry MX.', 799.99, 15),
+('Razer Huntsman Mini', 'Teclado óptico 60% com iluminação Chroma.', 699.90, 8),
+('Keychron K6', 'Teclado mecânico compacto Bluetooth com switches Gateron.', 499.90, 12);
